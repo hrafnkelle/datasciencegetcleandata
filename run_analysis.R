@@ -10,28 +10,37 @@ train_subject<-tbl_df(read.table('UCI HAR Dataset/train/subject_train.txt'))
 test<-tbl_df(read.table('UCI HAR Dataset/test/X_test.txt'))
 test_act<-tbl_df(read.table('UCI HAR Dataset/test/y_test.txt'))
 test_subject<-tbl_df(read.table('UCI HAR Dataset/test/subject_test.txt'))
-full<-rbind_list(train,test)
-full_act<-as.factor(c(train_act$V1, test_act$V1))
-full_subject<-as.factor(c(train_subject$V1, test_subject$V1))
 features<-read.table('UCI HAR Dataset/features.txt')
 activity<-read.table('UCI HAR Dataset/activity_labels.txt')
 
+# Create factor vector (since the activty is a categorical variable) for the train/test set combined
+full_act<-as.factor(c(train_act$V1, test_act$V1))
+# Create factor vector (since the subject is a categorical variable) for the train/test set combined
+full_subject<-as.factor(c(train_subject$V1, test_subject$V1))
 
-# find column indices for mean and std features and extract a table only with those features
+# create a combined dataset from the train and test tables
+full<-rbind_list(train,test)
+
+# We assume the features wanted are those with a mean or std in their name in the features name vector.
+# Now find (grep) the column indices for mean and std features using and extract (using select) a 
+# table only with those features
 meanIdx<-grep("mean",features[,2])
 stdIdx<-grep("std",features[,2])
-extract<-select(full, c(meanIdx,stdIdx))
-
 
 # fix the names of the mean/std features so they make good R names
 meanFeatureNames<-gsub("-","_",gsub("()","",as.character(features[meanIdx,2]),fixed=TRUE))
 stdFeatureNames<-gsub("-","_",gsub("()","",as.character(features[stdIdx,2]),fixed=TRUE))
 colnames(extract)<-c(meanFeatureNames,stdFeatureNames)
 
-# add the activity and subject to each row of features
+# Set factor names to the activity factor
 levels(full_act)<-activity$V2
-extract1<-mutate(extract, activity=full_act, subject=full_subject)
 
-output<-extract1 %>% group_by(subject,activity) %>% summarise_each(funs(mean))
+# dplyr transformation of the extracted
+output<-full                                                 # from the full dataset
+		%>% select(c(meanIdx,stdIdx))                        # select only the mean/std columns
+		%>% mutate(activity=full_act, subject=full_subject)  # add the activty and subject columns
+		%>% group_by(subject,activity)                       # group the observations by subject and activty
+		%>% summarise_each(funs(mean))                       # so we can summarize each feature by subject and activity
 
+# finally we write out the data in a tidy format
 write.table(output, file="tidy.txt",row.name=FALSE)
