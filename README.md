@@ -39,170 +39,170 @@ Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ort
 
 
 
-* *subject*
+* **subject**
   Number identifing the subject the observation came from. All observations with the same subject number come from the same subject 
-* *activity* Describes the activity of the subject was performing. Possible values are
-  ** WALKING
-  ** WALKING_UPSTAIRS
-  ** WALKING_DOWNSTAIRS
-  ** SITTING
-  ** STANDING
-  ** LAYING
-* *tBodyAcc_mean_X*
+* **activity** Describes the activity of the subject was performing. Possible values are
+  * WALKING
+  * WALKING_UPSTAIRS
+  * WALKING_DOWNSTAIRS
+  * SITTING
+  * STANDING
+  * LAYING
+* **tBodyAcc_mean_X**
    mean of the timeseries signal from the accelerometer due to body movement in the X direction 
-* *tBodyAcc_mean_Y* 
+* **tBodyAcc_mean_Y**
    mean of the timeseries signal from the accelerometer due to body movement in the Y direction 
-* *tBodyAcc_mean_Z* 
+* **tBodyAcc_mean_Z**
    mean of the timeseries signal from the accelerometer due to body movement in the Z direction 
-* *tGravityAcc_mean_X* 
+* **tGravityAcc_mean_X**
    mean of the timeseries signal from the accelerometer due to gravity in the X direction 
-* *tGravityAcc_mean_Y* 
+* **tGravityAcc_mean_Y**
    mean of the timeseries signal from the accelerometer due to gravity in the Y direction 
-* *tGravityAcc_mean_Z* 
+* **tGravityAcc_mean_Z**
    mean of the timeseries signal from the accelerometer due to gravity in the Z direction 
-* *tBodyAccJerk_mean_X*
+* **tBodyAccJerk_mean_X**
    mean of the timeseries signal from the accelerometer due to body jerk in the X direction  
-* *tBodyAccJerk_mean_Y* 
+* **tBodyAccJerk_mean_Y**
    mean of the timeseries signal from the accelerometer due to body jerk in the Y direction  
-* *tBodyAccJerk_mean_Z* 
+* **tBodyAccJerk_mean_Z**
    mean of the timeseries signal from the accelerometer due to body jerk in the Z direction  
-* *tBodyGyro_mean_X*
+* **tBodyGyro_mean_X**
    mean of the timeseries signal from the gyro due to body movement in the X direction 
-* *tBodyGyro_mean_Y* 
+* **tBodyGyro_mean_Y**
    mean of the timeseries signal from the gyro due to body movement in the Y direction
-* *tBodyGyro_mean_Z*
+* **tBodyGyro_mean_Z**
    mean of the timeseries signal from the gyro due to body movement in the Z direction 
-* *tBodyGyroJerk_mean_X* 
+* **tBodyGyroJerk_mean_X**
    mean of the timeseries signal from the gyro due to body jerk in the X direction
-* *tBodyGyroJerk_mean_Y* 
+* **tBodyGyroJerk_mean_Y**
    mean of the timeseries signal from the gyro due to body jerk in the Y direction
-* *tBodyGyroJerk_mean_Z* 	
+* **tBodyGyroJerk_mean_Z* 	
    mean of the timeseries signal from the gyro due to body jerk in the Z direction
-* *tBodyAccMag_mean* 
+* **tBodyAccMag_mean**
    mean of magnitude the timeseries signal from the accelerometer due to body movement
-* *tGravityAccMag_mean* 
+* **tGravityAccMag_mean**
    mean of magnitude the timeseries signal from the accelerometer due to gravity
-* *tBodyAccJerkMag_mean*
+* **tBodyAccJerkMag_mean**
    mean of magnitude the timeseries signal from the accelerometer due to body jerk  
-* *tBodyGyroMag_mean* 
+* **tBodyGyroMag_mean**
    mean of magnitude the timeseries signal from the gyro due to body movement
-* *tBodyGyroJerkMag_mean* 
+* **tBodyGyroJerkMag_mean**
    mean of magnitude the timeseries signal from the gyro due to body jerk  
-* *fBodyAcc_mean_X*
+* **fBodyAcc_mean_X**
    A fast fourier transform of the mean of the timeseries signal from the accelerometer due to body movement in the X direction
-* *fBodyAcc_mean_Y* 
+* **fBodyAcc_mean_Y**
    A fast fourier transform of the mean of the timeseries signal from the accelerometer due to body movement in the Y direction
-* *fBodyAcc_mean_Z* 
+* **fBodyAcc_mean_Z**
    A fast fourier transform of the mean of the timeseries signal from the accelerometer due to body movement in the Z direction
-* *fBodyAcc_meanFreq_X* 
+* **fBodyAcc_meanFreq_X**
    Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of the timeseries signal from the accelerometer due to body movement in the X direction
-* *fBodyAcc_meanFreq_Y* 
+* **fBodyAcc_meanFreq_Y**
    Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of the timeseries signal from the accelerometer due to body movement in the Y direction
-* *fBodyAcc_meanFreq_Z* 
+* **fBodyAcc_meanFreq_Z**
    Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of the timeseries signal from the accelerometer due to body movement in the Z direction
-* *fBodyAccJerk_mean_X* 
+* **fBodyAccJerk_mean_X**
    A fast fourier transform of the mean of the timeseries signal from the accelerometer due to body jerk in the X direction  
-* *fBodyAccJerk_mean_Y* 
+* **fBodyAccJerk_mean_Y**
    A fast fourier transform of the mean of the timeseries signal from the accelerometer due to body jerk in the Y direction  
-* *fBodyAccJerk_mean_Z* 
+* **fBodyAccJerk_mean_Z**
    A fast fourier transform of the mean of the timeseries signal from the accelerometer due to body jerk in the Z direction  
-* *fBodyAccJerk_meanFreq_X* 
+* **fBodyAccJerk_meanFreq_X**
    Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of the timeseries signal from the accelerometer due to body jerk in the X direction  
-* *fBodyAccJerk_meanFreq_Y* 
+* **fBodyAccJerk_meanFreq_Y**
    Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of the timeseries signal from the accelerometer due to body jerk in the X direction  
-* *fBodyAccJerk_meanFreq_Z* 
+* **fBodyAccJerk_meanFreq_Z**
    Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of the timeseries signal from the accelerometer due to body jerk in the X direction  
-* *fBodyGyro_mean_X* 
+* **fBodyGyro_mean_X**
    A fast fourier transform of the mean of the timeseries signal from the gyro due to body movement in the X direction 
-* *fBodyGyro_mean_Y* 
+* **fBodyGyro_mean_Y**
    A fast fourier transform of the mean of the timeseries signal from the gyro due to body movement in the Y direction 
-* *fBodyGyro_mean_Z* 
+* **fBodyGyro_mean_Z**
    A fast fourier transform of the mean of the timeseries signal from the gyro due to body movement in the Z direction 
-* *fBodyGyro_meanFreq_X* 
+* **fBodyGyro_meanFreq_X**
    Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of the timeseries signal from the gyro due to body movement in the X direction
-* *fBodyGyro_meanFreq_Y* 
+* **fBodyGyro_meanFreq_Y**
    Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of the timeseries signal from the gyro due to body movement in the Y direction
-* *fBodyGyro_meanFreq_Z* 
+* **fBodyGyro_meanFreq_Z**
    Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of the timeseries signal from the gyro due to body movement in the Z direction
-* *fBodyAccMag_mean* 
+* **fBodyAccMag_mean**
    A fast fourier transform of the mean of magnitude the timeseries signal from the accelerometer due to body movement
-* *fBodyAccMag_meanFreq* 
+* **fBodyAccMag_meanFreq**
    Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of magnitude the timeseries signal from the accelerometer due to body movement
-* *fBodyBodyAccJerkMag_mean* 
+* **fBodyBodyAccJerkMag_mean**
   A fast fourier transform of the mean of the magnitude of the timeseries signal from the accelerometer due to body jerk
-* *fBodyBodyAccJerkMag_meanFreq* 
+* **fBodyBodyAccJerkMag_meanFreq**
   Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of the magnitude of the timeseries signal from the accelerometer due to body jerk
-* *fBodyBodyGyroMag_mean* 
+* **fBodyBodyGyroMag_mean**
    A fast fourier transform of the mean of the magnitude of the timeseries signal from the gyro due to body movement
-* *fBodyBodyGyroMag_meanFreq* 
+* **fBodyBodyGyroMag_meanFreq**
   Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of the magnitude of the timeseries signal from the gyro due to body movement
-* *fBodyBodyGyroJerkMag_mean* 
+* **fBodyBodyGyroJerkMag_mean**
    A fast fourier transform of the mean of the magnitude of the timeseries signal from the gyro due to body jerk
-* *fBodyBodyGyroJerkMag_meanFreq* 
+* **fBodyBodyGyroJerkMag_meanFreq**
   Weighted average of the frequency components to obtain a mean frequency of a fast fourier transform of the mean of the magnitude of the timeseries signal from the gyro due to body jerk
-* *tBodyAcc_std_X* 
+* **tBodyAcc_std_X**
    standard deviation of the timeseries signal from the accelerometer due to body movement in the X direction 
-* *tBodyAcc_std_Y* 
+* **tBodyAcc_std_Y**
    standard deviation of the timeseries signal from the accelerometer due to body movement in the Y direction 
-* *tBodyAcc_std_Z* 
+* **tBodyAcc_std_Z**
    standard deviation of the timeseries signal from the accelerometer due to body movement in the Z direction 
-* *tGravityAcc_std_X* 
+* **tGravityAcc_std_X**
    standard deviation of the timeseries signal from the accelerometer due to gravity in the X direction 
-* *tGravityAcc_std_Y* 
+* **tGravityAcc_std_Y**
    standard deviation of the timeseries signal from the accelerometer due to gravity in the Y direction 
-* *tGravityAcc_std_Z* 
+* **tGravityAcc_std_Z**
    standard deviation of the timeseries signal from the accelerometer due to gravity in the Z direction 
-* *tBodyAccJerk_std_X* 
+* **tBodyAccJerk_std_X**
    standard deviation of the timeseries signal from the accelerometer due to body jerk in the X direction
-* *tBodyAccJerk_std_Y* 
+* **tBodyAccJerk_std_Y**
    standard deviation of the timeseries signal from the accelerometer due to body jerk in the Y direction
-* *tBodyAccJerk_std_Z* 
+* **tBodyAccJerk_std_Z**
    standard deviation of the timeseries signal from the accelerometer due to body jerk in the Z direction
-* *tBodyGyro_std_X* 
+* **tBodyGyro_std_X**
    standard deviation of the timeseries signal from the gyro due to body movement in the X direction 
-* *tBodyGyro_std_Y* 
+* **tBodyGyro_std_Y**
    standard deviation of the timeseries signal from the gyro due to body movement in the Y direction 
-* *tBodyGyro_std_Z* 
+* **tBodyGyro_std_Z**
    standard deviation of the timeseries signal from the gyro due to body movement in the Z direction 
-* *tBodyGyroJerk_std_X* 
+* **tBodyGyroJerk_std_X**
    standard deviation of the timeseries signal from the gyro due to body jerk in the X direction
-* *tBodyGyroJerk_std_Y* 
+* **tBodyGyroJerk_std_Y**
    standard deviation of the timeseries signal from the gyro due to body jerk in the Y direction
-* *tBodyGyroJerk_std_Z* 
+* **tBodyGyroJerk_std_Z**
    standard deviation of the timeseries signal from the gyro due to body jerk in the Z direction
-* *tBodyAccMag_std* 
+* **tBodyAccMag_std**
    standard deviation of magnitude the timeseries signal from the accelerometer due to body movement
-* *tGravityAccMag_std* 
+* **tGravityAccMag_std**
    standard deviation of magnitude the timeseries signal from the accelerometer due to gravity
-* *tBodyAccJerkMag_std*
+* **tBodyAccJerkMag_std**
    standard deviation of magnitude the timeseries signal from the accelerometer due to body jerk  
-* *tBodyGyroMag_std* 
+* **tBodyGyroMag_std**
    standard deviation of magnitude the timeseries signal from the gyro due to body movement
-* *tBodyGyroJerkMag_std* 
+* **tBodyGyroJerkMag_std**
    standard deviation of magnitude the timeseries signal from the gyro due to body jerk  
-* *fBodyAcc_std_X*
+* **fBodyAcc_std_X**
    A fast fourier transform of the standard deviation of the timeseries signal from the accelerometer due to body movement in the X direction
-* *fBodyAcc_std_Y* 
+* **fBodyAcc_std_Y**
    A fast fourier transform of the standard deviation of the timeseries signal from the accelerometer due to body movement in the Y direction
-* *fBodyAcc_std_Z* 
+* **fBodyAcc_std_Z**
    A fast fourier transform of the standard deviation of the timeseries signal from the accelerometer due to body movement in the Z direction
-* *fBodyAccJerk_std_X* 
+* **fBodyAccJerk_std_X**
    A fast fourier transform of the standard deviation of the timeseries signal from the accelerometer due to body jerk in the X direction  
-* *fBodyAccJerk_std_Y* 
+* **fBodyAccJerk_std_Y**
    A fast fourier transform of the standard deviation of the timeseries signal from the accelerometer due to body jerk in the Y direction  
-* *fBodyAccJerk_std_Z* 
+* **fBodyAccJerk_std_Z**
    A fast fourier transform of the standard deviation of the timeseries signal from the accelerometer due to body jerk in the Z direction  
-* *fBodyGyro_std_X* 
+* **fBodyGyro_std_X**
    A fast fourier transform of the standard deviation of the timeseries signal from the gyro due to body movement in the X direction 
-* *fBodyGyro_std_Y* 
+* **fBodyGyro_std_Y**
    A fast fourier transform of the standard deviation of the timeseries signal from the gyro due to body movement in the Y direction 
-* *fBodyGyro_std_Z* 
+* **fBodyGyro_std_Z**
    A fast fourier transform of the standard deviation of the timeseries signal from the gyro due to body movement in the Z direction 
-* *fBodyAccMag_std* 
+* **fBodyAccMag_std**
    A fast fourier transform of the standard deviation of magnitude the timeseries signal from the accelerometer due to body movement
-* *fBodyBodyAccJerkMag_std* 
+* **fBodyBodyAccJerkMag_std**
   A fast fourier transform of the standard deviation of the magnitude of the timeseries signal from the accelerometer due to body jerk
-* *fBodyBodyGyroMag_std* 
+* **fBodyBodyGyroMag_std**
    A fast fourier transform of the standard deviation of magnitude the timeseries signal from the gyro due to body movement
-* *fBodyBodyGyroJerkMag_std*
+* **fBodyBodyGyroJerkMag_std**
   A fast fourier transform of the standard deviation of the magnitude of the timeseries signal from the gyro due to body jerk
