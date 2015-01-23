@@ -30,17 +30,18 @@ stdIdx<-grep("std",features[,2])
 # fix the names of the mean/std features so they make good R names
 meanFeatureNames<-gsub("-","_",gsub("()","",as.character(features[meanIdx,2]),fixed=TRUE))
 stdFeatureNames<-gsub("-","_",gsub("()","",as.character(features[stdIdx,2]),fixed=TRUE))
-colnames(extract)<-c(meanFeatureNames,stdFeatureNames)
 
 # Set factor names to the activity factor
 levels(full_act)<-activity$V2
 
 # dplyr transformation of the extracted
-output<-full                                                 # from the full dataset
-		%>% select(c(meanIdx,stdIdx))                        # select only the mean/std columns
-		%>% mutate(activity=full_act, subject=full_subject)  # add the activty and subject columns
-		%>% group_by(subject,activity)                       # group the observations by subject and activty
-		%>% summarise_each(funs(mean))                       # so we can summarize each feature by subject and activity
+output<-full %>% 
+        select(c(meanIdx,stdIdx)) %>%                        # select only the mean/std columns
+	      mutate(activity=full_act, subject=full_subject) %>%  # add the activty and subject columns
+		    group_by(subject,activity) %>%                       # group the observations by subject and activty
+		    summarise_each(funs(mean))                           # so we can summarize each feature by subject and activity
+
+colnames(output)<-c("subject","activity",meanFeatureNames,stdFeatureNames)
 
 # finally we write out the data in a tidy format
 write.table(output, file="tidy.txt",row.name=FALSE)
